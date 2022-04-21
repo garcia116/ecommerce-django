@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['https://garcia-ecommerce-project.herokuapp.com/', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['garcia-ecommerce-project.herokuapp.com/', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -107,11 +107,14 @@ if 'RDS_DB_NAME' in os.environ:
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'df862obpcpo8ph',
+            'HOST': 'ec2-34-192-210-139.compute-1.amazonaws.com',
+            'PORT': '5432',
+            'USER': 'ehkzybeigjscpd',
+            'PASSWORD': 'c063e863985a5ed72564610f978601c2b45c2689e6c013f32d82cdaed1373617'
         }
     }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
