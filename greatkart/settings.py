@@ -97,15 +97,11 @@ AUTH_USER_MODEL = 'accounts.Account'
 
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'df862obpcpo8ph',
-        'USER': 'ehkzybeigjscpd',
-        'PASSWORD': 'c063e863985a5ed72564610f978601c2b45c2689e6c013f32d82cdaed1373617',
-        'HOST': 'ec2-34-192-210-139.compute-1.amazonaws.com',
-        'PORT': 5432,
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
 
 
 # Password validation
