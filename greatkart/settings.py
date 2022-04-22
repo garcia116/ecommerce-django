@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'l0u@eh*6n39_34qv868n-inq4)!*w1)f60)8q1ij4y2)7$c2ja'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = ['https://garcia-ecommerce-project.herokuapp.com/', 'localhost', '127.0.0.1']
 
