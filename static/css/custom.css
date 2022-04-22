@@ -61,3 +61,7 @@ label:hover ~ input:checked ~ label{
   height: 80px;
   border: 1px solid grey;
 }
+
+.brand-wrap .logo1, .navbar-brand .logo1 {
+  height: 150px;
+}
