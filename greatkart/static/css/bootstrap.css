@@ -161,12 +161,12 @@ sup {
 }
 
 a {
-  color: #3167eb;
+  color: #a9793a;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #1244bd;
+  color: #212529;
   text-decoration: underline;
 }
 
@@ -2386,8 +2386,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #3167eb;
-  border-color: #3167eb;
+  background-color: #a9793a;
+  border-color: #a9793a;
 }
 .btn-primary:hover {
   color: #fff;
@@ -2682,8 +2682,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #3167eb;
-  border-color: #3167eb;
+  color: #a9793a;
+  border-color: #a9793a;
 }
 .btn-outline-primary:hover {
   color: #fff;
@@ -4602,7 +4602,7 @@ input[type=button].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #3167eb;
+  color: #a9793a;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
@@ -4631,8 +4631,8 @@ input[type=button].btn-block {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #3167eb;
-  border-color: #3167eb;
+  background-color: #a9793a;
+  border-color: #a9793a;
 }
 .page-item.disabled .page-link {
   color: #545454;
