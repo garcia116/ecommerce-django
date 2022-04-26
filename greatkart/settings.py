@@ -150,7 +150,7 @@ STATICFILES_DIRS = [
     'greatkart/static',
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # media files configuration
 MEDIA_URL = '/media/'
