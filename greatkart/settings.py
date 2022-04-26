@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'admin_honeypot',
     'storages',
 
-
 ]
 
 MIDDLEWARE = [
@@ -141,21 +140,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.1/howto/static-files/
-
-#STATIC_URL = '/static/'
-#STATICFILES_DIRS = [
-#    'greatkart/static',
-#]
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
-# media files configuration
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR /'media'
-
 # AWS S3 Static Files Configuration
 AWS_ACCESS_KEY_ID = 'AKIAS7VZD3QCCABZXSXY'
 AWS_SECRET_ACCESS_KEY = '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'
@@ -167,6 +151,21 @@ AWS_S3_OBJECT_PARAMETERS = {
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = 'public-read'
 AWS_LOCATION = 'static'
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.1/howto/static-files/
+
+STATICFILES_DIRS = [
+    'greatkart/static',
+]
+STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+# media files configuration
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR /'media'
+
+
 
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
