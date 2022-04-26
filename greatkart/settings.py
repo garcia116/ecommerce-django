@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'l0u@eh*6n39_34qv868n-inq4)!*w1)f60)8q1ij4y2)7$c2ja'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -159,7 +159,7 @@ STATICFILES_DIRS = [
     'greatkart/static',
 ]
 STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 
 DEFAULT_FILE_STORAGE = 'greatkart.media_storages.MediaStorage'
 
@@ -184,4 +184,4 @@ EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'Email Activation Link'
 
 # Activate Django-Heroku.
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
