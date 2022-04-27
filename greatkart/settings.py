@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'orders',
     'admin_honeypot',
     'storages',
+    'corsheaders',
 
 ]
 
@@ -54,6 +55,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -61,7 +63,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django_session_timeout.middleware.SessionTimeoutMiddleware',
 
+
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
+
 
 SESSION_EXPIRE_SECONDS = 1800  # 30 minutes
 SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
