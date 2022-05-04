@@ -41,18 +41,19 @@ List the ready features here:
 
 
 ## Screenshots
+#### Home Page
 <img width="400" alt="ecommerce-1" src="https://user-images.githubusercontent.com/38366630/166820695-a8dd77a7-7e69-4f03-b2ad-95ef26dc869d.png">
-
+#### Store Catalog 
 <img width="400" alt="ecommerce-2" src="https://user-images.githubusercontent.com/38366630/166820706-9e79c840-94b4-465b-a985-16b85595e331.png">
-
+#### Product Info
 <img width="400" alt="ecommerce-3" src="https://user-images.githubusercontent.com/38366630/166820718-5ac8f735-c03f-4ac3-9fff-76be0d3bcd52.png">
-
+#### User Dashboard
 <img width="400" alt="ecommerce-4" src="https://user-images.githubusercontent.com/38366630/166820731-b71d923b-724a-47d1-b265-ba3d4f3b9c64.png">
-
+#### Cart Functionality 
 <img width="400" alt="ecommerce-5" src="https://user-images.githubusercontent.com/38366630/166820744-44106ecf-c40a-451b-bbde-98292f743a64.png">
-
+#### Checkout Form
 <img width="400" alt="ecommerce-6" src="https://user-images.githubusercontent.com/38366630/166820751-5a7349c8-ca85-43ad-9b33-e91e6f70225a.png">
-
+#### Order Form
 <img width="400" alt="ecommerce-7" src="https://user-images.githubusercontent.com/38366630/166820760-a6ae982d-97f3-4a29-b373-5338badce4d2.png">
 
 
