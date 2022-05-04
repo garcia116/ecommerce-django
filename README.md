@@ -68,16 +68,40 @@ List the ready features here:
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+Make sure to have Python, Django, and Heroku installed on your operating system.
+Clone this repository.
+`git clone https://github.com/garcia116/ecommerce-django.git`
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+Decide upon a directory, create a virtual environment and activate it.
+
+On the project directory, install the requirements.txt file.
+`pip install requirements.txt`
+
+Create a new AWS S3 bucket. Inside the bucket, create a media folder and a static folder.
+
+Create a new Heroku app.
+`Heroku create example`
+
+On the project directory, go to the file named '.env.sample'. Copy its content and create a new '.env' file. Paste the content onto the file and fill in all the required secrety keys and passwords from Django, AWS S3, and Heroku.
+
+On your Heroku Dashboard, add onto the 'Config Vars' all the data that is in your .env file. This will ensure that all your key-values will get passed on to Heroku. 
+
+Run migrations to update/create database on Heroku.
+`python manage.py makemigrations`
+`python manage.py migrate`
+
+Finally, on the project directory shell, add, commit, and push to your heroku project.
+`git add -a`
+`git commit -m "migrations"`
+`git push heroku main`
 
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+On the project directory shell, run the local server to view the project.
+`python manage.py runserver`
 
-`write-your-code-here`
+Alternatively, deploy the project on Heroku to view it.
+`heroku deploy`
 
 
 ## Room for Improvement
