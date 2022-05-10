@@ -1,4 +1,4 @@
-# Ecommerce Web Project
+# E-commerce Web Project
 > An e-commerce web application built with the Django framework. Media & static files hosted on AWS S3, and website hosted on Heroku.
 > Live demo [_here_](https://garcia-ecommerce-project.herokuapp.com/). <!-- If you have the project hosted somewhere, include the link here. -->
 
@@ -16,10 +16,7 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
+The purpose of this project was to create a fully-functioning e-commerce website using Python and Django. I have used popular e-commerce website builder frameworks such as Wordpress and Shopify, and noticed the limited features available so I decided to create my own e-commerce website for educational purposes.
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
@@ -33,7 +30,6 @@
 
 
 ## Features
-List the ready features here:
 - Login/Sign Up Component
 - User Dashboard
 - Store Catalog
@@ -99,25 +95,24 @@ Finally, on the project directory shell, add, commit, and push to your heroku pr
 ## Usage
 On the project directory shell, run the local server to view the project.
 `python manage.py runserver`
+Navigate to to http://127.0.0.1:8000
 
-Alternatively, deploy the project on Heroku to view it.
-`heroku deploy`
+Alternatively, in your shell deploy the project on Heroku to view it.
+`heroku local`
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- Enhancing the mobile device UI by making changes to the navbar and toggler
+- Having the product gallery to be responsive. For example, when the user selects a product color variation, the product image should change to the color variation selected to allow the user to see their product selection.
 
 To do:
-- Feature to be added 1
-- Feature to be added 2
+- Adding the price range search function
+- Adding a filter search function to the store catalog
 
 
 ## Acknowledgements
-Give credit here.
 - This project was based on [this tutorial](https://www.udemy.com/course/django-ecommerce-project-based-course-python-django-web-development).
 - Many thanks to Rathan Kumar.
 
