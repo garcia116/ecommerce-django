@@ -98,7 +98,7 @@ On the project directory shell, run the local server to view the project.
 Navigate to to http://127.0.0.1:8000
 
 Alternatively, in your shell deploy the project on Heroku to view it.
-`heroku deploy`
+`heroku local`
 
 
 ## Room for Improvement
