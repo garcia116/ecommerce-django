@@ -147,10 +147,10 @@ USE_L10N = True
 USE_TZ = True
 
 # AWS S3 Static Files Configuration
-AWS_ACCESS_KEY_ID = 'AKIAS7VZD3QCCABZXSXY'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'garcia-store-116'
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % 'garcia-store-116'
+AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % config('AWS_STORAGE_BUCKET_NAME')
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
 }
@@ -181,13 +181,13 @@ MESSAGE_TAGS = {
 }
 
 # SMTP configuration
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = '587'
-EMAIL_HOST_USER = 'ggarcia.love4@gmail.com'
-EMAIL_HOST_PASSWORD = 'jtzyvzgjtrcqcunc'
-EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'Email Activation Link'
+EMAIL_BACKEND = config('EMAIL_BACKEND')
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT', cast=int)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
+DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
 
 # Activate Django-Heroku.
 #django_heroku.settings(locals())
